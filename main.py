@@ -19,7 +19,6 @@ NEW_GAME_MESSAGE = "You want one more game ? OK let's do it "
 def welcome(message):
     global NUMBER
     NUMBER = random.randint(1, 100)
-    print(NUMBER)
     bot.send_message(
         message.chat.id,
         "Hello, {0.first_name} {0.last_name}. \n"
